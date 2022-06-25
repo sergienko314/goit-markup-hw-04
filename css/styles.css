@@ -178,6 +178,8 @@ a {
     margin-top: 30px;
     
     padding: 10px 32px;
+
+    cursor: pointer;
    
 
 }
@@ -212,12 +214,15 @@ a {
 }
 
 .feature-icon {
+    width: 270px;
+    height: 120px;
     display: flex;
-    padding: 25px 102px;
+    justify-content: center;
+    align-items: center;
     background: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-    justify-content: center;
+    
 }
 
     
@@ -365,13 +370,17 @@ a {
 .client-link {
     
     display: flex;
+    justify-content: center;
+    align-self: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 .client-icon {
-    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
     fill: #AFB1B8;
 
 }
@@ -399,7 +408,7 @@ a {
 
 .footer-style {
     display: flex;
-    flex-direction: row;
+    align-items: baseline;
     
     
 }
@@ -462,10 +471,15 @@ footer .logo {
 .footer-block {
 }
 .footer-block p {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
     margin: 0%;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+
 }
 .footer-social {
     display: inline-flex;
@@ -568,9 +582,10 @@ footer .logo {
     background-color: var(--accent-text-color);
     border: 0;
     border-radius: 4px;
+    cursor: pointer;
 }
 .project-button:focus {
-    font-family: 'inherit';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -590,6 +605,9 @@ footer .logo {
 .project-box {
     padding: 20px 24px;
 
+}
+.project-box img {
+    max-width: 100%;
 }
 .project-text-primery {
     font-style: normal;
